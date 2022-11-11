@@ -1,0 +1,139 @@
+@import url('https://fonts.google.com/specimen/Poppins');
+@import url('https://fonts.google.com/specimen/Open+Sans');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Open Sans, sans-serif;
+    font-weight: 400;
+}
+
+body {
+    background-image: url(../images/bg-mobile.svg);
+    background-color: hsl(257, 40%, 49%);
+    background-repeat: no-repeat;
+    background-position: top;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+
+}
+
+ img {
+    max-width: 75%;
+}
+
+header {
+    display: flex;
+    justify-content: flex-start;
+    width: 67%;
+    padding: 8%;
+}
+
+h1 {
+    font-family: Poppins, sans-serif;
+    font-weight: 600;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    align-items: center;
+    color: aliceblue
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    line-height: 1.5;
+    max-width: 81%;
+}
+
+button {
+    padding: 4%;
+    width: 57%;
+    border-radius: 60px;
+    border: none;
+    color: hsl(257, 40%, 49%);
+}
+
+button:hover {
+    background-color: hsl(300, 69%, 71%);
+}
+
+footer {
+    display: flex;
+    width: 33%;
+    margin: 0 auto;
+    gap: 12%;
+}
+
+footer div {
+    border: 2px solid white;
+    padding: 2%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+}
+footer a:hover {
+    border: 1px solid hsl(300, 69%, 71%);
+}
+
+@media only screen and (min-width: 992px) {
+    body {
+        background-image: url(../images/bg-desktop.svg);
+        background-position: initial;
+    }
+
+    header {
+        width: 24%;
+        padding: 20px 15px;
+        margin: 0 20px;
+    }
+
+    main {
+        display: flex;
+        flex-direction: row;
+        gap: 0px;
+    }
+
+    article {
+        display: flex;
+        align-items: flex-start;
+        width: 50%;
+    }
+
+    h1 {
+        width: 56%;
+        font-size: 2em;
+    }
+
+    .p-graph {
+        width: 77%;
+        font-size: larger
+    }
+
+    article div {
+        width: 26%;
+    }
+
+    button {
+        width: 92%;
+        font-weight: 800;
+        padding: 6%;
+        box-shadow: 3px 1px 5px black;
+    }
+
+    footer {
+        display: flex;
+        width: 8%;
+        position: relative;
+        left: 41%;
+    }
+
+}
